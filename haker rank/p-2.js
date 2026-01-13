@@ -66,3 +66,25 @@ function vowelsAndConsonants(s) {
         console.log(c);
     }
 }
+
+let result = vowelsAndConsonants("jabascrpt");
+console.log(result)
+
+
+//another way
+ function vowelsAndConsonants(s) {
+   let vowel = "aeiou";
+   let consonant = [];
+   for(let i = 0; i<s.length;i++){
+    if(vowel.includes(s[i])){
+        console.log(s[i])
+    } else{
+        consonant.push(s[i])
+    }
+  
+   }
+     for(let j = 0; j<consonant.length; j++){
+        console.log(consonant[j])
+    }
+}
+ console.log(vowelsAndConsonants("jabascript"));
